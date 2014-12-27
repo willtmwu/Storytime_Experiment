@@ -11,8 +11,11 @@
 
   <!--<link href="../imports/dist/css/bootstrap.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
   <link href="../css/index.css" rel="stylesheet" type="text/css">
+  <!--<link href="../css/grayscale.css" rel="stylesheet" type="text/css">-->
+  <link href="../imports/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -20,6 +23,43 @@
 </head>
 
 <body id="page-top">
+  <!--Navigation Bar-->
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Storytime</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    </div>
 
   <!-- Intro Header -->
   <header class="intro">
@@ -27,10 +67,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h1 class="brand-heading">Grayscale</h1>
-            <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
-            <a href="#about" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated"></i>
+            <h1 class="brand-heading">The Storytime Experiment</h1>
+            <p class="intro-text">What happens when an artist without a story, meets a writer without a brush...
+              <br>Welcome to the Storytime.
+              <br>Created by an Insomniac.</p>
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
             </a>
           </div>
         </div>
@@ -42,10 +84,9 @@
   <section id="about" class="container content-section text-center">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <h2>About Grayscale</h2>
-        <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-        <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-        <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+        <h2>About The Storytime Experiment</h2>
+        <p>This experiment will aim to be an <a href="https://github.com/willtmwu/Storytime_Experiment">Open-source Experiment</a>
+          that aims to see what happens when the brightest artists find the most talented storywriters!   </p>
       </div>
     </div>
   </section>
@@ -53,8 +94,8 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!--<script src="../imports/dist/js/bootstrap.min.js"></script>-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!--<script src="../scripts/grayscale.js"></script>-->
 </body>
 
 </html>

@@ -49,6 +49,7 @@ function requestHandler(req, res){
 
   //find path to folder
   if(!extensions[ext]){
+    //change to file not found
     res.writeHead(404, {'Content-Type': 'text/html'});
     res.end("&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;The requested file type is not supported&lt;/body&gt;&lt;/html&gt;");
   } else {
