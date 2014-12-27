@@ -1,17 +1,19 @@
-html {
-  background: url("../img/woods.jpg") no-repeat center center fixed;
+body {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/woods.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.page-404{
-  background-color: rgb(255,255,255);
-  position: relative;
-  width: 50%;
-  padding-left: 20%%
-  padding-right: 85%;
 
+  overflow: hidden;
+}
+
+.page-404{
 }
 
 .page-404-heading{
@@ -19,5 +21,54 @@ html {
 }
 
 .page-404-description{
-  font-weight: bold;
+}
+
+
+body > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+}
+
+body > header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+}
+
+body > header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25)
+}
+
+body > header > h1 {
+  font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 500%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
 }
